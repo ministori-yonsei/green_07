@@ -138,6 +138,15 @@
 
 > table : table의 영역을 설정
 > 
+> thead, tbody, tfoot : table 데이터의 그룹을 표시
+> 
+> tr(table row) : 행
+> 
+> th(table head) : 제목 칸(셀)
+> 
+> td(table data) : 데이터 칸(셀)
+> 
+> caption : 테이블의 제목,설명
 
 
 
