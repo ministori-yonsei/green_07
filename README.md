@@ -158,7 +158,13 @@
 
 > img 태그를 사용할 때 src, alt 속성은 반드시 사용해야 함
 
+### Video Element
 
+> attrubute
+> - controls : 비디오 컨트롤 버튼 표시
+> - loop : 비디오 반복 재생
+> - muted : 음소거
+> - autoplay : 자동재생(항상 muted와 같이 사용)
 
 
 
