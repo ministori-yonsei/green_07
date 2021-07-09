@@ -194,4 +194,26 @@
 > - 화면에 줄바꿈되지 않고 나란히 표시되는 요소
 > 
 > - 인라인요소에 포함된 콘텐츠의 너비만큼만 차지함
+> 
+> div(division) / span
+> - 단순 영역 구분 요소
+
+### 폼 요소
+
+> input, button
+
+```
+<input type="text">
+
+<input type="password">
+
+<input type="button" value="이름">
+<input type="submit" value="이름">
+<input type="reset" value="이름">
+
+<button type="button">이름</button>
+<button type="submit">이름</button>
+<button type="reset">이름</button>
+```
+
 
