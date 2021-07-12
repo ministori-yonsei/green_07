@@ -221,24 +221,68 @@ root 상대경로
 ### 인터넷 주소체계
 
 > IP address : 192.168.0.1
+> 
 > Domain address : https://www.naver.com
 > - 기본주소(IP) => 의미있는 영어단어로 변환 : 도메인 주소
+> 
 > www.naver.com/images/picture.jpg => URL
 
 ## CSS
 
 > CSS(Cascading Style Sheet)
+> 
 > - cascading : 나중에 선언한것이 최종 반영되는 CSS 특징
+> 
 > - CSS는 여러 대상에 대해서 공통으로 스타일을 적용시킬수 있음
 
 > CSS syntax
+> 
 > - selector(선택자)와 declaration block(선언블록)으로 구성됨
+> 
 > - 선언블록은 중괄호 안에 여러 선언을 포함
+> 
 > - 각 선언에는 property와 value로 구성됨
 
 ```
 h1 {color:red;font-size:10px;}
 ```
+
+### class, id
+
+> HTML element에 대해서 이름을 지정해줄 때 사용하는 attibute
+> 
+> class
+> 
+> - 여러개의 HTML element에 같은 클래스 이름을 사용할 수 있음
+> 
+> - 한 개의 HTML element에 여러개의 클래스 이름을 사용할 수 있음
+> 
+> id
+> 
+> - id 이름은 HTML 문서내에서 고유해야함(한 개만 존재)\
+> 
+> - 한 개의 HTML element에 한 개의 id 이름만 사용할 수 있음 
+
+```
+<div class="box box1 box2"></div>
+<div class="box box1 box2"></div>
+<div class="box box1 box2"></div>
+
+<div id="title1"></div>
+<div id="title2"></div>
+<div id="title3"></div>
+```
+
+### naming 표기방식
+- naming을 할 때 한 단어로 naming을 하기에는 한계가 있기 때문에 여러 단어로 naming을 하게될 때, 단어와 단어 사이를 구분해야 하는데 일반 문서 작성처럼 띄어쓰기로 구분할 수 없기때문에 단어와 단어 사이를 기호나 규칙에 의해서 띄어쓰지 않고 구분할 수 있도혹 함 => 표기방식
+
+> 표기방식 종류
+> - snake case : gnb_list_item (underbar/underscore) => file/folder
+> - kebab case : gnb-list-item (hyphen/dash) => id/class
+> - camel case : gnbListItem => javascript 변수/함수 이름
+> - Pascal case : GnbListItem => javascript에서의 class 이름 지정
+
+
 
 
 
