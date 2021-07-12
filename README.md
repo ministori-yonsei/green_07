@@ -178,6 +178,8 @@
 
 <img src="../images/picture.jpg">
 
+root 상대경로
+<img src="/images/picture.jpg">
 ```
 
 ### Block/Inline Element
@@ -216,4 +218,9 @@
 <button type="reset">이름</button>
 ```
 
+### 인터넷 주소체계
 
+> IP address : 192.168.0.1
+> Domain address : https://www.naver.com
+> - 기본주소(IP) => 의미있는 영어단어로 변환 : 도메인 주소
+> www.naver.com/images/picture.jpg => URL
