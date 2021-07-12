@@ -198,7 +198,7 @@ root 상대경로
 > - 인라인요소에 포함된 콘텐츠의 너비만큼만 차지함
 > 
 > div(division) / span
-> - 단순 영역 구분 요소
+> - 단순 영역구분 요소(Container Element)
 
 ### 폼 요소
 
