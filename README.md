@@ -282,7 +282,19 @@ h1 {color:red;font-size:10px;}
 > - camel case : gnbListItem => javascript 변수/함수 이름
 > - Pascal case : GnbListItem => javascript에서의 class 이름 지정
 
+### 컬러 모드/코드 정리
 
+> 컬러모드
+> - RGB : Red, Green, Blue - 가산혼합
+> - CMYK : Cyan, Magenta, Yellow, Black(Key plate) - 감산혼합
+
+> 색 표현 범위
+> - 1bit : 최소단위
+> - 8bit => 1byte : 정보표현 최소단위
+> - RGB 색상 표현 : 각 1byte씩 총 3byte(24bit)로 표현(트루컬러)
+> - RGB 색상 표현 값
+>   - 16진수 : #0FAB78
+>   - 10진수 : (255, 100, 121) ※숫자범위 : 0~255
 
 
 
