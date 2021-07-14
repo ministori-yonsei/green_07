@@ -434,6 +434,15 @@ div{
 > Block : 박스모델의 모든 요소가 적용 가능
 > Inline : 박스모델의 width/height, 상하 margin 이 제대로 적용되지 않음
 
+### display 속성
+
+> 박스(영역)의 block, inilne 속성을 변형
+
+> display : inline => 박스 속성이 inline으로 변형
+> 
+> display : block => 박스 속성이 block으로 변형
+> 
+> dispaly : inline-block => 박스속성이 inline 요소 속성(가로길이가 자식요소에 맞춰짐), block 요소의 속성(박스 모델 적용 가능) 모두 가지고 있음
 
 
 
