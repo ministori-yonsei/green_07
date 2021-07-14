@@ -353,6 +353,28 @@ h1 {color:red;font-size:10px;}
 > - Block 요소의 경우 px, % 단위가 적용됨
 > - Inline 요소의 경우 px, % 단위 모두 적용되지 않음
 
+### padding
+
+> padding-top
+> 
+> padding-right
+> 
+> padding-bottom
+> 
+> padding-left
+> 
+> padding 축약표현
+
+```
+padding:20px; : 모든 방향
+
+padding:20px 30px; : top/bottom right/left
+
+padding:20px 30px 40px : top right/left bottom
+
+padding:10px 20px 30px 40px : top right bottom left
+```
+
 
 
 
