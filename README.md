@@ -444,7 +444,11 @@ div{
 > 
 > dispaly : inline-block => 박스속성이 inline 요소 속성(가로길이가 자식요소에 맞춰짐), block 요소의 속성(박스 모델 적용 가능) 모두 가지고 있음
 
+### 가로 배치 방법
 
+- float
+- flex
+- grid
 
 
 
