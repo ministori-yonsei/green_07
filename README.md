@@ -375,6 +375,33 @@ padding:20px 30px 40px : top right/left bottom
 padding:10px 20px 30px 40px : top right bottom left
 ```
 
+### margin
+
+> padding과 사용방법이 같음
+
+> margin 겹침
+> - 위아래 연이어 배치된 박스의 위/아래 margin이 겹쳐서 큰 수치의 margin만 표현되는 것
+
+### border
+
+> border
+> 
+> width, style, color
+> 
+> top, right, bottom, left
+
+```
+border:1px solid #fff; Ex) #aa5500 => #a50
+
+border-width:1px;
+border-style:solid;
+border-color:#fff;
+
+border-top:1px solid #fff;
+border-right:1px solid #fff;
+border-bottom:1px solid #fff;
+border-left:1px solid #fff;
+```
 
 
 
