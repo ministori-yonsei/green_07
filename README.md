@@ -331,4 +331,48 @@ h1 {color:red;font-size:10px;}
 > 
 > font-style : italic
 
+### Box Model
+
+> HTML Element에는 기본적으로 영역이 존재하는데, 이 영역에 몇가지 CSS 요소를 적용할 수 있음.
+> - Content 영역 : width/height
+> - padding : 안쪽 여백
+> - border : 테두리
+> - margin : 바깥 여백
+
+### width/height
+
+> width : 가로길이/너비
+> - 기본 속성 : Block 요소는 부모요소에 맞춰지고, inline 요소는 자식요소에 맞춰짐
+> 
+> height : 세로길이/높이
+> - 기본 속성 : Block, Inline 모두 자식요소에 맞춰짐
+> 
+> 단위
+> - px : 지정된 수치값으로 고정
+> - % : 지정된 수치값이 부모요소를 기준으로 일정 비율 크기로 정해짐
+> - Block 요소의 경우 px, % 단위가 적용됨
+> - Inline 요소의 경우 px, % 단위 모두 적용되지 않음
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
