@@ -450,8 +450,32 @@ div{
 - flex
 - grid
 
+### float
 
+> 박스를 부유시켜서 좌우배치를 할 수 있게 함
+> float:left, float:right 부모 요소의 왼쪽/오른쪽을 기준으로 배치,순서 적용
 
+> float으로 배치시 박스가 띄워지기 때문에 위아래 인접 관계 박스들의 레이아웃이 위로 올라감
+> float 박스의 하단 박스에 clear:both 를 적용하면 위로 올라가지 않음
+> float 박스는 계속 띄워져 있기 때문에 margin 적용 같은 문제가 발생할 수 있음
+
+> float 박스를 부모요소로 감싸주고 float박스 하단에 높이 0 짜리 박스를 추가해서 clear:both를 적용
+> float 박스와 위아래 인접관계에 있던 박스들은 float 박스의 부모요소와 인접관계가 되기 때문에 float과 상관없어짐
+```
+HTML
+<div class="float-parent">
+  <div class="float-box">Text</div>
+  <div class="clearfix"></div>
+</div>
+
+CSS
+.float-box{
+  float:left;
+}
+.clearfix{
+  clear:both;
+}
+```
 
 
 
