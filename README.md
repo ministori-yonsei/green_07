@@ -432,6 +432,7 @@ div{
 ### Block, Inline에 박스모델 적용
 
 > Block : 박스모델의 모든 요소가 적용 가능
+> 
 > Inline : 박스모델의 width/height, 상하 margin 이 제대로 적용되지 않음
 
 ### display 속성
