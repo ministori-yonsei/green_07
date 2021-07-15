@@ -478,7 +478,63 @@ CSS
 }
 ```
 
+### 가상 클래스(Pseudo Class)
 
+> 선택자(요소)의 상태를 정의
+> 
+> 여러 요소중 특정 요소를 지정
+
+```
+상태 정의
+
+a:link{
+  color:red;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  color:green;
+}
+a:active{
+  color:yellow;
+}
+
+※ a 태그의 pseudo class는 위 순서와 동일하게 코딩
+
+
+특정 요소 지정
+
+p:first-child{
+  color:red;
+}
+p:last-child{
+  color:blue;
+}
+p:nth-child(3){
+  color:green;
+}
+p:nth-child(4n){
+  color:pink;
+}
+```
+
+### 가상 요소(Pseudo Element)
+
+> HTML에 직접 입력하는 것이 아닌 CSS에서 랜더링 시 생성되는 가상 요소
+
+```
+div::before{
+  content:"Hello World";
+}
+
+div::after{
+  content:"";
+  display:block;
+  width:100px;
+  height:30px;
+}
+```
 
 
 
