@@ -536,6 +536,37 @@ div::after{
 }
 ```
 
+### 투명도
+
+> transparent : 투명한
+> - 투명색 적용
+> 
+> alpha : 추가색
+> - rgba() 함수 사용 : color에만 투명도 적용
+> 
+> opacity : 불투명한
+> - Element(요소)에 투명도 적용
+
+
+```
+div{
+  background-color:transparent;
+}
+
+div{
+  opacity:0.7;(0.0 ~ 1.0)
+}
+
+div{
+  background-color:rgb(255,255,255); /* rgb() : rgb함수 */
+}
+
+div{
+  background-color:rgba(255,255,255,0.6); /* a : alpha (0.0 ~ 1.0) */
+}
+
+```
+
 
 
 
