@@ -628,9 +628,6 @@ div{
 > 상속되는 css property를 활용하면 코드 길이를 줄일 수 있음
 
 
-background 이미지 처리 2번째
-
-
 
 
 
