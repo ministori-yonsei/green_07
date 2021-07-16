@@ -632,6 +632,41 @@ div{
 > => One Source : HTML source
 > => Multi Use : CSS source
 
+> 해상도
+> - 모바일 실제 해상도와 CSS 해상도 구분
+
+> @media
+```
+@media screen and (해상도 범위){
+  해당 해상도의 스타일
+}
+```
+
+> 해상도 범위, 변경점(break point)
+> - 변경점의 기준 해상도
+>   - 모바일 : 360px ~ 480px(640px)
+>   - 태블릿 : 720px ~ 1024px
+>   - PC : 1024px ~
+```
+닫힌 범위
+@media screen and (min-width:360px) and (max-width:480px){}
+@media screen and (min-width:720px) and (max-width:1024px){}
+@media screen and (min-width:1024px){}
+
+열린 범위
+/* pc CSS */
+div{font-size:15px;}
+
+/* tablet CSS */
+@media screen and (max-width:1024px){
+  div{font-size:13px;}
+}
+
+/* smart phone CSS */
+@media screen and (max-width:640px){
+  div{font-size:11px;}
+}
+```
 
 
 
