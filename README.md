@@ -611,7 +611,23 @@ div{
 > - 가상요소에 디자인 이미지를 적용해서 화면에 표시
 
 ### flex
-css 상속
+
+> 기존의 float, position 방식을 사용하지 않고 웹페이지의 레이아웃을 구성할 수 있게 함
+```
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+```
+> flex의 박스 배치 관련 property들은 부모요소에 적용시켜줌
+
+
+### css 상속
+> css는 html element의 부모요소에 적용된 css 속성이 자식요소에도 적용
+> 상속되는 css property를 활용하면 코드 길이를 줄일 수 있음
+
+
 background 이미지 처리 2번째
 
 
