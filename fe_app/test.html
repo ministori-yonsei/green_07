@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="js/jquery-3.6.0.js"></script>
+    <meta charset="utf-8">
+    <title>지도 생성하기</title>
+
 </head>
 <body>
-    <button type="button" class="exec">exec</button>
-    <script>
-        $(function(){
-            function showPosition(position) {
-                window.alert("Latitude: " + position.coords.latitude +
-                    "<br>Longitude: " + position.coords.longitude);
-            }
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:100%;height:350px;"></div>
 
-            $('.exec').on('click', function(){
-                navigator.geolocation.getCurrentPosition(showPosition);
-            });
-        });
-    </script>
+<script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=2f8bbe753965ac9b9edeb0449a1d10e7&libraries=services"></script>
+<script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+        mapOption = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+</script>
 </body>
 </html>
