@@ -105,6 +105,7 @@ $(function(){
     var map;
     var marker;
 
+    // 첫 맵 생성
     function showMap(currentLatitude, currentLongitude){
         mapContainer = document.getElementById('map'), // 지도를 표시할 div
             mapOption = {
@@ -125,8 +126,19 @@ $(function(){
         marker.setMap(map);
     }
 
+    // 맵과 마커 이동
+    function moveMap(coords){
+        // 마커 위치를 해당 좌표로 이동
+        marker.setPosition(coords);
+
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        map.setCenter(coords);
+    }
+
+    // 페이지 로드시 첫 실행
     showMap(33.450701, 126.570667);
 
+    // 마우스로 지도 클릭시 마커를 이동
     // 지도에 클릭 이벤트를 등록합니다
     // 지도를 클릭하면 마지막 파라미터로 넘어온 함수를 호출합니다
     kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
@@ -143,38 +155,35 @@ $(function(){
         console.log(latlng.getLat());
         console.log(latlng.getLng());
 
+        console.log(234);
+
     });
 
+    // 현재위치 버튼 클릭시 맵과 마커 이동
     $('.current-button').on('click', function(){
-        showMap(currentLatitude, currentLongitude);
+        var currentCoords = new kakao.maps.LatLng(currentLatitude, currentLongitude);
+        moveMap(currentCoords);
     });
 
+    // 검색 버튼 클릭시 입력된 주소값으로 위치 검색
     $('.search-button').on('click',function(){
         let inputValue = $('.search-text').val();
-
         search(inputValue); // 함수 호출
     });
 
     // 주소-좌표 변환 객체를 생성합니다
     var geocoder = new kakao.maps.services.Geocoder();
 
+    // 주소로 좌표를 검색합니다
     function search(inputValue){
-        // 주소로 좌표를 검색합니다
+
         geocoder.addressSearch(inputValue, function(result, status) {
 
             // 정상적으로 검색이 완료됐으면
             if (status === kakao.maps.services.Status.OK) {
-
                 var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
 
-                // 결과값으로 받은 위치를 마커로 표시합니다
-                var marker = new kakao.maps.Marker({
-                    map: map,
-                    position: coords
-                });
-
-                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-                map.setCenter(coords);
+                moveMap(coords);
             }
         });
     }
