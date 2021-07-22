@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <button type="button" class="exec">exec</button>
+    <script>
+        $(function(){
+            function showPosition(position) {
+                window.alert("Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude);
+            }
+
+            $('.exec').on('click', function(){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            });
+        });
+    </script>
+</body>
+</html>
